@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball scoreboard</title>
+
+    <link rel="stylesheet" href="index.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&family=Sixtyfour&display=swap');
+    </style>
+</head>
+<body>
+    <h1>BASKETBALL SCOREBOARD</h1>
+    <div class="players-container">
+        <div class="player-box">
+            <h2 id="count-el1">0</h2>
+            <div class="button-row">
+                <button id="plus1p1-btn" onclick="increment1p1()">+1</button>
+                <button id="plus2p1-btn" onclick="increment2p1()">+2</button>
+                <button id="plus3p1-btn" onclick="increment3p1()">+3</button>
+            </div>
+        </div>
+        <div class="player-box">
+            <h2 id="count-el2">0</h2>
+            <div class="button-row">
+                <button id="plus1p2-btn" onclick="increment1p2()">+1</button>
+                <button id="plus2p2-btn" onclick="increment2p2()">+2</button>
+                <button id="plus3p2-btn" onclick="increment3p2()">+3</button>
+            </div>
+        </div>
+    </div>
+
+    <button id="save-btn" onclick="save()">Save scores</button>
+    <p id="save-el">Previous entries: </p>
+
+    <script src="index.js"></script>
+</body>
+</html>
